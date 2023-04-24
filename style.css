@@ -1,0 +1,192 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('imagens/ppd.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.box-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.box-login .title {
+    color: white;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.box-login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.box-login input {
+    outline: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 48px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding-left: 16px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.box-login input:focus {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.box-login input::placeholder {
+    color: #ffffff;
+}
+
+.box-login button {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    font-size: 20px;
+    background-color: rgba(221, 124, 149, 0.623);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.box-login button:hover{
+    background-color: rgba(206, 105, 130, 0.623);
+}
+
+.box-login .divider {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80%;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.box-login a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.box-login a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(2, 0, 0, .5);
+
+}
+
+/*header {
+    display: flex;
+    justify-content: end;
+    backdrop-filter: blur(16px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.274);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+
+
+}*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    backdrop-filter: blur(16px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.274);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+}    
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2px;
+    height: 80px;
+    width: 320px;
+    /*backdrop-filter: blur(16px);*/
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);*/
+    margin-right: 5px;
+}
+
+.relogio div {
+    height: 50px;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+    letter-spacing: 1px;
+}
+
+.relogio span {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.menu ul {
+    display: flex;
+}
+
+
+.menu li {
+    margin-right: 1.2em;
+    list-style: none;
+    font-size: 20px;    
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color: rgb(211, 211, 211);
+}
